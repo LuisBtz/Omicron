@@ -3,30 +3,31 @@ import Layout from '../components/layout/layout'
 import { Seo } from '../components/layout/seo';
 import styled from 'styled-components';
 
-const LarespuestaPage = () => {
+const PseudocienciaPage = () => {
   return (
     <Layout >
       <Container>
-        <h2>NIVEL 1</h2>
+        <h2>NIVEL 4</h2>
         <div className='texto' >
-            <img src='/Nivel1/FUSION_NUCLEAR.png' alt='imagen' />
+            <img src='/Nivel4/quark.png' alt='Imagen' />
         </div>
-        <div className='pista' dangerouslySetInnerHTML={{__html:`
+        {/* <div className='pista' dangerouslySetInnerHTML={{__html:`
         <!-- 
         /////////////////
         ////////////////
         PISTA:  
-        Presta atención a su centro
+        Debería ser MUY grande
         ////////////////
         /////////////// 
         -->
-        `}}></div>
-        <h2>¿Qué ocurre aquí?</h2>
-        <p>Trece caracteres</p>
+        `}}></div> */}
+        <h2>¿Cuál falta?</h2>
+        <p>Siete caracteres</p>
         
+
         <div className='pistaOculta'>
-          <img src='/nivel8/3/b.png' alt='pista'  className='pista oculta'/>
-          <img src='/nivel8/3/r.png' alt='pista'  className='pista oculta'/>
+          <img src='/nivel8/1/s.png' alt='pista'  className='pista oculta'/>
+          <img src='/nivel8/1/e.png'  alt='pista' className='pista oculta'/>
         </div>
         
       </Container>
@@ -38,6 +39,13 @@ const LarespuestaPage = () => {
 const Container = styled.section`
   .texto {
     margin-top: 50px;
+    position: relative;
+    .outline {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
   }
   h2 {
     margin-top: 50px;
@@ -50,8 +58,8 @@ const Container = styled.section`
 `
 
 
-export default LarespuestaPage
+export default PseudocienciaPage
 
 export const Head = () => (
-  <Seo title='Omicron | La Respuesta' description='Acertijo de la boda de Sergio y Luisa.' image='/screenshot.png' />
+  <Seo title='Omicron | Planeta X' description='Acertijo de la boda de Sergio y Luisa.' image='/screenshot.png' />
   )

@@ -3,32 +3,32 @@ import Layout from '../components/layout/layout'
 import { Seo } from '../components/layout/seo';
 import styled from 'styled-components';
 
-const LarespuestaPage = () => {
+const FusionnuclearPage = () => {
   return (
     <Layout >
       <Container>
-        <h2>NIVEL 1</h2>
+        <h2>NIVEL 2</h2>
         <div className='texto' >
-            <img src='/Nivel1/FUSION_NUCLEAR.png' alt='imagen' />
+            <p>0, 88, 225, 365, 687, 4333, 10759, 30688, 60182, X</p>
         </div>
         <div className='pista' dangerouslySetInnerHTML={{__html:`
         <!-- 
         /////////////////
         ////////////////
         PISTA:  
-        Presta atención a su centro
+        Debería ser MUY grande
         ////////////////
         /////////////// 
         -->
         `}}></div>
-        <h2>¿Qué ocurre aquí?</h2>
-        <p>Trece caracteres</p>
+        <h2>¿Qué?</h2>
+        <p>Ocho caracteres</p>
+        
         
         <div className='pistaOculta'>
-          <img src='/nivel8/3/b.png' alt='pista'  className='pista oculta'/>
-          <img src='/nivel8/3/r.png' alt='pista'  className='pista oculta'/>
+          <img src='/nivel8/2/l.png'  alt='pista'  className='pista oculta'/>
+          <img src='/nivel8/3/e.png' alt='pista'  className='pista oculta'/>
         </div>
-        
       </Container>
 
     </Layout>
@@ -50,8 +50,8 @@ const Container = styled.section`
 `
 
 
-export default LarespuestaPage
+export default FusionnuclearPage
 
 export const Head = () => (
-  <Seo title='Omicron | La Respuesta' description='Acertijo de la boda de Sergio y Luisa.' image='/screenshot.png' />
+  <Seo title='Omicron | Fusion Nuclear' description='Acertijo de la boda de Sergio y Luisa.' image='/screenshot.png' />
   )
